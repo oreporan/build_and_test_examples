@@ -5,3 +5,6 @@ python:
 
 script:
   - python hello.py
+
+after_success:
+ - git fetch --all --prune && git checkout master && git pull origin travis && git push origin master
