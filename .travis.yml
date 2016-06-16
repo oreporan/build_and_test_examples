@@ -9,3 +9,5 @@ script:
 deploy:
   provider: script
   script: merge_travis.sh
+  on:
+    branch: travis
